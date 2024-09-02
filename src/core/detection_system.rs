@@ -566,7 +566,7 @@ impl CompositeGestureDetectionClient {
     }
 
     fn block_until(&self, request: ClientRequest, desired_server_state: ServerState) -> i64 {
-        // println!("Blocking until {:?} is acknowledged.", desired_server_state);
+        println!("Blocking until {:?} is acknowledged.", desired_server_state);
         self.set_client_request(request);
         print!("f");
         let start_time = Instant::now();
